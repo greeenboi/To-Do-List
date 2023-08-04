@@ -3,6 +3,8 @@ import './App.css';
 import React , {useState , useEffect} from 'react';
 import Todo from './Todo';
 
+import { BsSend } from 'react-icons/bs'
+
 import { db } from './firebase'
 import {query, collection, onSnapshot, updateDoc, doc, addDoc, deleteDoc } from 'firebase/firestore'
 
@@ -52,13 +54,13 @@ function App() {
   return (
     <>
       <main>
-          <h1>My Tasks of the day</h1>
-        <section className=' flex flex-col justify-evenly sm:p-8 md:p-32 items-center border-opacity-40 border-cyan-200 border shadow-xl'>
+          <h1 className='shadow '>My Tasks of the day</h1>
+        <section className=' flex flex-col justify-around sm:p-8 md:p-32 items-center border-opacity-40 border-cyan-200 border shadow-xl'>
                 
           
-          <form onSubmit={createTodo} className='flex flex-col lg:flex-row sm:w-full xl:w-1/2 align-middle justify-evenly gap-2'>
+          <form onSubmit={createTodo} className='flex flex-col lg:flex-row sm:w-full xl:w-1/2 align-middle justify-evenly gap-2'>            
             <input value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder="What shall we do today ?" className='h-auto text-ellipsis border p-2 w-full text-xl rounded-sm font-sans'/>
-            <button type="submit" className='border sm:p-2 md:p-4 bg-opacity-30 bg-slate-600 border-sky-300 opacity-80 rounded-lg font-sans'>Submit</button>
+            <button type="submit" className='border sm:p-2 md:p-4 bg-opacity-30 bg-slate-600 border-sky-300 opacity-80 rounded-lg font-sans'><BsSend/></button>
           </form>       
 
         <ul className='flex flex-col w-full justify-center items-center p-0 m-2'>
