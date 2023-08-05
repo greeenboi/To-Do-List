@@ -59,8 +59,8 @@ function App() {
                 
           
           <form onSubmit={createTodo} className='flex flex-col lg:flex-row sm:w-full xl:w-1/2 align-middle justify-evenly gap-2'>            
-            <input value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder="What shall we do today ?" className='h-auto text-ellipsis border p-2 w-full text-xl rounded-sm font-sans'/>
-            <button type="submit" className='border sm:p-2 md:p-4 bg-opacity-30 bg-slate-600 border-sky-300 opacity-80 rounded-lg font-sans'><BsSend/></button>
+            <input value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder="What shall we do today ?" className='h-auto text-ellipsis bg-transparent text-gray-950 border p-2 w-full text-xl rounded-sm font-sans'/>
+            <button type="submit" className=' items-center border sm:p-2 md:p-4 bg-opacity-30 bg-slate-600 border-sky-300 opacity-80 rounded-lg font-sans'><BsSend/></button>
           </form>       
 
         <ul className='flex flex-col w-full justify-center items-center p-0 m-2'>
