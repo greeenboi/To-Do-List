@@ -55,6 +55,7 @@ ul::-webkit-scrollbar-thumb
 input{
   background-color: rgba(255, 255, 255, 0.6);
   color: black;
+  transition: all 500ms ease-in-out;
 }
 
 input:focus{
