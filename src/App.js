@@ -55,12 +55,12 @@ function App() {
     <>
       <main>
           <h1 className='shadow '>My Tasks of the day</h1>
-        <section className=' flex flex-col justify-around sm:p-8 md:p-32 items-center border-opacity-40 border-cyan-200 border shadow-xl'>
+        <section className=' flex flex-col justify-around sm:p-12 md:p-32 items-center border-opacity-40 border-cyan-200 border shadow-xl'>
                 
           
-          <form onSubmit={createTodo} className='flex flex-col lg:flex-row sm:w-full xl:w-1/2 align-middle justify-evenly gap-2'>            
-            <input value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder="What shall we do today ?" className='h-auto text-ellipsis bg-transparent text-gray-950 border p-2 w-full text-xl rounded-sm font-sans'/>
-            <button type="submit" className=' items-center border sm:p-2 md:p-4 bg-opacity-30 bg-slate-600 border-sky-300 opacity-80 rounded-lg font-sans'><BsSend/></button>
+          <form onSubmit={createTodo} className='flex flex-col lg:flex-row sm:w-full xl:w-1/2 align-middle justify-evenly items-center gap-6'>            
+            <input value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder="What shall we do today ?" className='h-auto text-ellipsis border p-2 w-full text-xl rounded-md font-sans'/>
+            <button type="submit" className='flex justify-center items-center border pl-4 pr-4 p-2 md:p-4 bg-opacity-30 bg-slate-600 border-sky-300 opacity-80 rounded-lg font-sans'><BsSend/></button>
           </form>       
 
         <ul className='flex flex-col w-full justify-center items-center p-0 m-2'>

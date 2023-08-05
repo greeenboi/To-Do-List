@@ -52,6 +52,16 @@ ul::-webkit-scrollbar-thumb
 }
 }
 
+input{
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
+input:focus{
+  background-color: rgba(255, 255, 255, 0.9);
+  scale: 1.1;
+}
+
 
 section {
   width: 80vw;
