@@ -63,6 +63,13 @@ input:focus{
   scale: 1.1;
 }
 
+button{
+  transition: all 500ms ease;
+}
+
+button:hover{
+  background-color:rgba(0, 128, 128,0.4);
+}
 
 section {
   width: 80vw;
@@ -210,8 +217,7 @@ h1 {
   right: 0;
   margin: auto;
   /* z-index: 99; */
-  color: white;
-  
+  color:rgb(0, 0, 0);
   text-align: center;
   font-size: 2.6em;
   mix-blend-mode: overlay;

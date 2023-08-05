@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <main>
-          <h1 className='shadow '>My Tasks of the day</h1>
+          <h1 className='p-8 '>My Tasks of the day</h1>
         <section className=' flex flex-col justify-around sm:p-12 md:p-32 items-center border-opacity-40 border-cyan-200 border shadow-xl'>
                 
           

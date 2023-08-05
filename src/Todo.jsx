@@ -5,8 +5,8 @@ const style = {
     li:`flex flex-row justify-between p-4 md:my-2 capitalize gap-2`,
     liComplete : `flex flex-row justify-between p-4 md:my-2 capitalize gap-2`,
     row:`flex`,
-    text: `ml-2 cursor:pointer `,
-    textComplete: `ml-2 cursor:pointer line-through`,
+    text: `ml-2 cursor:pointer text-ellipsis`,
+    textComplete: `ml-2 cursor:pointer line-through text-ellipsis`,
     button:`cursor:pointer flex items-center border border-sky-300 opacity-80 rounded-sm p-1`
 }
 
@@ -24,7 +24,7 @@ const Todo = ({todo, toggleStatus, deleteTodo}) => {
                 </span>                
               </label>
             </div>
-            <p onClick={()=> toggleStatus(todo)} className={todo.completed ? style.textComplete : style.text}>
+            <p  onClick={()=> toggleStatus(todo)} className={todo.completed ? style.textComplete : style.text}>
                 {todo.text}
             </p>
         </div>
